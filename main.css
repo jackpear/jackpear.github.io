@@ -1,0 +1,8 @@
+
+:root {
+    --primaryColor: #0000ff
+}
+
+div {
+    background-color: var(--primaryColor);
+}
