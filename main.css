@@ -1,8 +1,74 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+* {
+    margin:0px;
+}
 :root {
-    --primaryColor: #0000ff
+    --backgroundColor: #bdb76b;
+    --primary: #ff9b71;
+    --secondary: #000000;
+    --tertiary: #e9d2f4;
+
 }
 
-div {
-    background-color: var(--primaryColor);
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding:10px;
+    background-color: var(--backgroundColor);
+    
+}
+
+nav > * {
+    padding: 10px;
+    border-radius: 20px;    
+    border-style: solid;  
+    text-decoration: none; 
+    color: white;
+    border-color: var(--backgroundColor);
+    transition-property: border-color;
+    transition-duration: 0.4s;
+}
+
+nav >*:hover {
+    border-color: white;
+}
+
+
+
+.title {
+    background-color: var(--backgroundColor);
+    width: 100%;
+    height: 250px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding-top: 300px;
+}
+.title h1 {
+    transition: font-size, 1s;
+    margin: auto;
+    width: 40%;
+}
+.title h1:hover {
+    font-size: 48px;
+}
+
+.brief {
+    margin: 30px;
+    text-align: center;
+}
+
+.brief img {
+    margin: 50px;
+}
+
+.brief em {
+    color: var(--primary);
+    font-style: normal;
+    font-weight: bold;
+    
 }
